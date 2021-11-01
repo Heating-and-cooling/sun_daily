@@ -10,9 +10,9 @@ solar irradiance on horizontal and vertical surfaces under clear sky conditions.
 “Global Horizontal Irradiance Clear Sky Models: Implementation and Analysis”, by Matthew J. Reno, Clifford W. Hansen and
 Joshua S. Stein
 
-https://www.researchgate.net/publication/254994320_Global_horizontal_irradiance_clear_sky_models_implementation_and_analysisas
+https://www.researchgate.net/publication/254994320_Global_horizontal_irradiance_clear_sky_models_implementation_and_analysis
 
-well as on DIN 5034-2 "Daylight in interiors-Part 2: Principles ".
+as well as on DIN 5034-2 "Daylight in interiors-Part 2: Principles ".
 For the calculation of diffuse irradiance, the R-values of Gusev, published in "CIE S 011/E: 2003/ISO15469:2004: Spatial
 Distribution of Daylight- CIE Standard General Sky, Vienna" were used. R-value is the ratio of the irradiance on a
 tilted surface to the horizontal irradiance by clear sky only.
