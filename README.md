@@ -13,4 +13,4 @@ dependence on the sun radiation and air temperature. This is shown by using the 
 “Garden_2021_03_08.xlsx”.
 
 The code Surface_temp.py use for the calculation of the dynamic heat flow through walls the numerical Crank-Nicolson
-method as explained in erkam-o/DynamicHeatFlow .
+method as explained in [erkam-o/DynamicHeatFlow](https://github.com/erkam-o/DynamicHeatFlow).
