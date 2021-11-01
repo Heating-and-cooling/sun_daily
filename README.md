@@ -1,16 +1,21 @@
-# Dynamic temperature calculation on surfaces in solar radiance and radiation exchange with environment 
+# Calculation of solar radiation on horizontal and vertical surfaces under clear sky conditions
+ 
+Sırrı Aydınlı, Engin Bagda, Erkam Talha Öztürk
 
-Engin Bagda, Manfred Hermann, Erkam Talha Öztürk
-Heat flow through walls depends on the surface temperature between the inside and the outside. If the surface
-temperatures change the heat flow gets dynamic. In this work is a calculation method explained and a code
-“Surface_temp.py” given to determine the surface temperature of materials at changing solar radiation and air
-temperature. It is shown how the surface temperature depends beside the intensity of the solar radiation and the air
-temperature to the solar absorptions coefficient of the surface, thermal conductivity of the material and the emission
-coefficients of surface and environment.
+For the impact of solar radiation on surfaces and the indoor climate of buildings, the knowledge of hourly solar
+irradiance under clear sky conditions is of crucial importance. The hourly solar irradiance is also important for the
+calculation of the power output of photovoltaic systems over the day. With the code SunDaily.py it is possible for a
+given place, located by its longitude and latitude, to calculate for every day in the year the hourly direct and diffuse
+solar irradiance on horizontal and vertical surfaces under clear sky conditions. The code is based to the paper
+“Global Horizontal Irradiance Clear Sky Models: Implementation and Analysis”, by Matthew J. Reno, Clifford W. Hansen and
+Joshua S. Stein
 
-The code “Surface_temp_2021_03_11.py” calculate in a good approximation the surface temperature of a material in
-dependence on the sun radiation and air temperature. This is shown by using the measurements in the excel sheet
-“Garden_2021_03_08.xlsx”.
+https://www.researchgate.net/publication/254994320_Global_horizontal_irradiance_clear_sky_models_implementation_and_analysisas
 
-The code Surface_temp.py use for the calculation of the dynamic heat flow through walls the numerical Crank-Nicolson
-method as explained in [erkam-o/DynamicHeatFlow](https://github.com/erkam-o/DynamicHeatFlow).
+well as on DIN 5034-2 "Daylight in interiors-Part 2: Principles ".
+For the calculation of diffuse irradiance, the R-values of Gusev, published in "CIE S 011/E: 2003/ISO15469:2004: Spatial
+Distribution of Daylight- CIE Standard General Sky, Vienna" were used. R-value is the ratio of the irradiance on a
+tilted surface to the horizontal irradiance by clear sky only.
+The code uses the turbidity factors according to Linke suggested in DIN 5034-2 for clear sky conditions, but it is also
+possible to calculate with other turbidity factors, depending on the requirements of the local atmospheric conditions at
+the time.
