@@ -145,7 +145,7 @@ for hour in range (3, 23, 1): # in local true time respective solar time
 
 # Direct normal irradiance (Bestrahlungsstaerke auf Flächennormale, gerichtet zur Sonne)
 
-        Normal_direct = SC * math.exp(-TF * Air_mass * math.exp(-Height/8000))
+        Normal_direct = SC * math.exp(-TF * Air_mass * math.exp(-Height/8000.0))
 
 # Direct horizontal irradiance (Horizontale Bestrahlungsstärke durch Sonne)
 
@@ -153,7 +153,7 @@ for hour in range (3, 23, 1): # in local true time respective solar time
 
  # Horizontal irradiance from sky (Horizontale Bestrahlungsstaerke durch den klaren Himmel)
 
-        Horizontal_sky = 0.5 * SC * (math.sin(math.radians(Elevation_deg)))  * (TaM - math.exp(-TF * Air_mass *  math.exp(-Height/8000)))
+        Horizontal_sky = 0.5 * SC * (math.sin(math.radians(Elevation_deg)))  * (TaM - math.exp(-TF * Air_mass *  math.exp(-Height/8000.0       )))
 
 # Global horizontal irradiance (Horizontale Globalbestrahlungsstaerke)
 
