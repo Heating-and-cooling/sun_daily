@@ -194,15 +194,15 @@ for hour in range (3, 23, 1): # in local true time respective solar time
         R21 = GUSEV[J2][I1]  # [AziDiff2] [Elev1]
         R22 = GUSEV[J2][I2]  # [AziDiff2] [Elev2]
 
-        R110 = (R11 - R12) / 15  # [AziDiff1] [Elev1] - [AziDiff1] [Elev2]
-        R220 = (R21 - R22) / 15  # # [AziDiff2] [Elev1] - [AziDiff1] [Elev2]
+        R110 = (R11 - R12) / 15.0  # [AziDiff1] [Elev1] - [AziDiff1] [Elev2]
+        R220 = (R21 - R22) / 15.0  # # [AziDiff2] [Elev1] - [AziDiff1] [Elev2]
 
         R01 = R11 - R110 * Elev_diff
         R02 = R21 - R220 * Elev_diff
 
-        R0012 = (R02 - R01) / 15
+        R0012 = (R02 - R01) / 15.0
 
-        R_sky = (R01 + R0012 * Alf_diff) / 100  # irradiance on a vertical surface related to horizontal irradiance by clear sky only
+        R_sky = (R01 + R0012 * Alf_diff) / 100.0  # irradiance on a vertical surface related to horizontal irradiance by clear sky only
 
 # Sky irradiance
         Surface_sky = Horizontal_sky * R_sky
