@@ -52,7 +52,7 @@ if Latitude_deg > 90:
     exit()
 
 Longitude_deg = float(input("Longitude in degrees: "))
-Longitude_rad = math.radians(Longitude_deg)
+# Longitude_rad = math.radians(Longitude_deg)
 if Longitude_deg > 180:
     print ("Code for Longitude > 180° is not appropriate.")
     exit()
